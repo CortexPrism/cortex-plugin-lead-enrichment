@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-lead-enrichment",
-  "version": "1.0.0",
-  "description": "Lead Enrichment & Scoring Pipeline — Enrich leads with Clearbit/Apollo/ZoomInfo and score against ICP criteria",
+  "version": "1.0.1",
+  "description": "Lead Enrichment & Scoring Pipeline \u2014 Enrich leads with Clearbit/Apollo/ZoomInfo and score against ICP criteria",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -9,7 +9,10 @@
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-lead-enrichment",
   "homepage": "https://cortexprism.io/marketplace/plugins/lead-enrichment",
-  "capabilities": ["tools", "network:fetch"],
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
   "tools": [
     {
       "name": "leads_enrich",
@@ -26,9 +29,20 @@
       "description": "Import and enrich a batch of leads",
       "params": []
     },
-    { "name": "leads_list", "description": "List enriched leads with filters", "params": [] }
+    {
+      "name": "leads_list",
+      "description": "List enriched leads with filters",
+      "params": []
+    }
   ],
   "dependencies": {},
-  "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "peerDependencies": {
+    "cortex": ">=0.51.0"
+  },
+  "aiDisclosure": {
+    "tools": [
+      "Kilo (DeepSeek) \u2014 batch scaffold"
+    ],
+    "humanReview": true
+  }
 }
